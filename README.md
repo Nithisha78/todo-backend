@@ -42,5 +42,4 @@ All data is persisted in `tasks.json`.
 
 ---
 
-## 📁 Folder Structure
 
