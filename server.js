@@ -5,7 +5,11 @@ const cors = require("cors");
 const app = express();
 const PORT = 3000;
 
-app.use(cors()); // Allow frontend to connect
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE"]
+}));
+ // Allow frontend to connect
 app.use(express.json());
 
 let tasks = require("./tasks.json");
